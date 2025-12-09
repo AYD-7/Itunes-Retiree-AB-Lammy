@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="students.css">
+    <script defer src="students.js"></script>
+</head>
+<body>
+    <h1>Students' Names and Scores</h1>
+
+    <form action="#" method="post" id="myForm">
+
+        <!-- Student's Name -->
+        <fieldset>
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" placeholder="Enter student's name" required>
+        </fieldset>
+
+        <!-- Mathematics Score -->
+        <fieldset>
+            <label for="mathematicsScore">Mathematics Score:</label>
+            <input type="number" id="mathematicsScore" name="mathematicsScore" placeholder="Enter mathematics score" required>
+        </fieldset>
+
+        <!-- English Score -->
+        <fieldset>
+            <label for="englishScore">English Score:</label>
+            <input type="number" id="englishScore" name="englishScore" placeholder="Enter english score" required>
+        </fieldset>
+
+        <!-- Physics Score -->
+        <fieldset>
+            <label for="physicsScore">Physics Score:</label>
+            <input type="number" id="physicsScore" name="physicsScore" placeholder="Enter physics score" required>
+        </fieldset>
+
+        <input type="submit" id="add" value="Add +">
+
+        
+    </form>
+
+    <br><br>
+    <table border="1" id="studentsTable">
+        <tr>
+            <th>Student Name</th>
+            <th>Mathematics Score</th>
+            <th>English Score</th>
+            <th>Physics Score</th>
+        </tr>
+        <!-- To dynamically populate with js -->
+    </table>
+</body>
+</html>
